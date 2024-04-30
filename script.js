@@ -1,13 +1,22 @@
 let character = 'Hello';
 let count = 8;
 let rows = [];
+ 
 
-const call = padRow("CamperChan");
-console.log(call);
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
 
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
 
-for (let i = 0; i < count; i = i + 1) {
-  rows.push(character.repeat(i + 1))
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+  done++; 
 }
 
 let result = ""
